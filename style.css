@@ -15,12 +15,18 @@ body {
     text-align: center;
 }*/
 
+img {
+    width: 800px;
+    border-radius: 20px;
+}
+
 .bg img {
     width: 100%;
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    border-radius: 0px;
 }
 
 .name {
@@ -80,7 +86,7 @@ a:hover {
     padding: 50px;
     width: 85%;
     background-color: gray;
-
+    border-radius: 15px;
 }
 
 .textBlock {
@@ -88,20 +94,14 @@ a:hover {
     display: flex;
 }
 
-.textBlock li {
-    /*display: inline-block;*/
-}
-
 .topic {
-    background-color: lightgreen;
-    border-radius: 20px;
+    border-radius: 30px;
     margin: 20px;
-    padding: 20px;
+    padding: 10px;
 }
 
 .topicText {
-    background-color: lightgreen;
-    border-radius: 20px;
+    border-radius: 30px;
     margin: 20px;
     padding: 20px;
     font-size: 25px;
@@ -109,4 +109,34 @@ a:hover {
 
 .textLine {
     width: 300px;
+}
+
+#bottomPage {
+    background-color: rgb(70, 70, 70);
+    text-align: center;
+    padding: 50px;
+}
+
+.socialMedia {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.socialMedia li {
+    display: inline-block;
+    width: 20px;
+    padding: 30px ;
+}
+
+.socialMedia li a img {
+    width: 50px;
+    height: 50px;
+}
+
+.socialMedia li a img:hover {
+    opacity: 0.3;
+    transition: opacity ease-in 0.2s;
+    background-color: white;
+    color: white;
 }
